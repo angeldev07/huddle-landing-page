@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Variables a usar / vars to do  */
+:root{
+    --violet: hsl(257, 40%, 49%);
+    --soft-magenta: hsl(300, 69%, 71%);
+    --heading: 'Poppins', sans-serif;
+}
+
+body{
+    background-color: var(--violet);
+    background-image: url('images/bg-desktop.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.container{
+    width: 90%;
+    margin: 2rem auto;
+}
+
+.logo__container{
+    max-width: 150px;
+}
+
+.content-img{
+    padding: .5rem;
+}
+
+
+.logo,
+.img-mockups{
+    width: 100%;
+    display: block;
+}
+
+
+
+.contents{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2rem;
+    padding-top: 4rem;
+    color: #fff;
+}
+
+.content__texts{
+    padding: 2rem .5rem 0;
+}
+
+.title{
+    font-size: 3rem;
+    font-family: var(--heading);
+}
+
+.subtitle{
+    padding-top: 1em;
+    width: 80%;
+    line-height: 1.7;
+}
+
+.cta{
+    display: inline-block;
+    background-color: #fff;
+    padding: .8em 6em;
+    margin-top: 1rem;
+    border-radius: 30px;
+    text-decoration: none;
+    color: var(--violet);
+    box-shadow: 0 3px 5px 3px rgba( 0 0 0 / .5);
+}
+
+.cta:hover{
+    background-color: var(--soft-magenta);
+    color: #fff;
+}
+
+.social{
+    display: flex;
+    justify-content: flex-end;
+    width: 90%;
+    text-align: center;
+}
+
+.icon {
+    display: inline-block;
+    color: #fff;
+    padding: .58em 1em;
+    
+    border: 1px solid;
+    border-radius: 50%;
+    margin: 0 1em;
+}
+
+.icon:hover{
+    color: var(--soft-magenta);
+    border: 1px solid;
+}
+
+@media screen and (max-width: 800px) {
+    body{
+        background-image: url('images/bg-mobile.svg');
+        background-size:contain;
+        text-align: center;
+    }
+
+    .title{
+        font-size: 1.8rem;
+    }
+
+    .subtitle{
+        width: 90%;
+        margin: auto;
+    }
+
+    .social{
+        width: 100%;
+        justify-content: center;
+        padding: 5rem 0;
+    }
+
+}
+
+
+
+
+
